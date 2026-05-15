@@ -24,5 +24,5 @@ The website can generate links to the Verifone Hosted Checkout using an Azure Fu
 - Marble: #fff9f3
 
 ## Fonts
-- Headings: Olimpico (local)
+- Headings: Palanquin (Google Fonts)
 - Body: Figtree (Google Fonts)
