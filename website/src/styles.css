@@ -230,7 +230,6 @@ html {
 .section > .about-content,
 .section > .contact-grid,
 .section > .bookings-frame,
-.section > #bookings-link,
 .section > .contact-map {
   max-width: var(--maxw);
   margin-left: auto;
