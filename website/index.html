@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/QBC-Head-Small.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Queens Beauty Clinic — boutique beauty treatments. Book online and pay securely."
+    />
+    <title>Queens Beauty Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600&family=Palanquin:wght@100&display=swap"
+    />
+    <script type="module" src="/src/main.ts"></script>  
+    <script type="module" src="/lib/svg-loader.min.js" async></script>
+  </head>
+  <body>
+    <div class="backdrop">
+        <svg
+          data-src="/assets/images/QBC-Head-Large.svg"
+          data-cache="disabled"
+          alt=""
+        ></svg>
+    </div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Queens Beauty Clinic — home" onclick="location.replace(this.href); return false;">
+        <svg
+          data-src="/assets/images/QBC-Sign.svg"
+          data-cache="disabled"
+          alt=""
+          class="brand-mark"
+        ></svg>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#services" onclick="location.replace(this.href); return false;">Services</a>
+        <a href="#book" onclick="location.replace(this.href); return false;">Book</a>
+        <!-- <a href="#pay">Pay</a> -->
+        <a href="#about" onclick="location.replace(this.href); return false;">About</a>
+        <a href="#contact" onclick="location.replace(this.href); return false;">Contact</a>
+      </nav>
+    </header>
+
+    <a class="anchor" id="top"></a>
+    <main>
+      <section class="section">
+        <div class="hero">
+          <div class="hero-text">
+            <h1>Refined beauty,<br />unhurried care.</h1>
+            <p class="lede">
+              A boutique clinic offering considered treatments in a calm,
+              welcoming space.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#book" onclick="location.replace(this.href); return false;">Book an appointment</a>
+              <a class="btn btn-ghost" href="#services" onclick="location.replace(this.href); return false;">Explore services</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <svg data-src="/assets/images/QBC-Poster.svg" alt=""></svg>
+          </div>
+        </div>
+      </section>
+
+      <a class="anchor" id="services"></a>
+      <section class="section">
+        <h2>Services</h2>
+        <p class="section-intro">
+          Each treatment is tailored to you. Get in touch if you'd like advice
+          on what's right for your skin.
+        </p>
+        <ul class="services-grid">
+          <li class="service-card">
+            <h3>Electrolysis</h3>
+            <p>
+              Permanent hair removal by applying an electric current through
+              a fine sterile needle.
+            </p>
+          </li>
+          <li class="service-card">
+            <h3>IPL Super Hair Removal</h3>
+            <p>
+              Advanced, virtually painless technique that uses rapid 
+              low-energy pulses of light
+            </p>
+          </li>
+          <li class="service-card">
+            <h3>Waxing</h3>
+            <p>
+              Gentle, precise waxing for face and body using high-quality wax
+              formulations.
+            </p>
+          </li>
+          <li class="service-card">
+            <h3>Brows and Lashes</h3>
+            <p>
+              Expert shaping, tinting, and lifting services to enhance your
+              natural beauty.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <a class="anchor" id="book"></a>
+      <section class="section section-dark">
+        <h2>Book online</h2>
+        <p class="section-intro">
+          View live availability and book in seconds through our secure
+          Microsoft Bookings page.
+        </p>
+        <div id="bookings-link">
+          <a class="btn btn-primary" href="https://bookings.cloud.microsoft/book/book@andretuparamorrison.com/?ismsaljsauthenabled" target="_blank" rel="noopener">
+            Open booking portal
+          </a>
+        </div>
+      </section>
+
+      <a class="anchor" id="about"></a>
+      <section class="section section-light">
+        <h2>About</h2>
+        <p class="section-intro">
+          A calm, professional space where every treatment is built around
+          your comfort and wellbeing.
+        </p>
+        <div class="about-content">
+          <p>
+            Queens Beauty Clinic embodies a commitment to inclusivity, welcoming 
+            individuals from all walks of life. Each client can expect a 
+            personalised approach, ensuring that their unique beauty journey 
+            aligns with their vision of self-love and confidence. With a variety 
+            of services, including permanent hair removal options, the clinic 
+            provides a supportive environment to enhance what you see in the mirror. 
+          </p>
+          <p>
+            Our mission is to care for and affirm people rather than chase profits. 
+            That's why all our profits are reinvested into supporting marginalised 
+            communities. Beauty that's both affordable and ethical!
+          </p>
+        </div>
+      </section>
+
+      <!-- <a class="anchor" id="pay"></a>
+      <section class="section">
+        <h2>Pay for an appointment</h2>
+        <p class="section-intro">
+          Settle an invoice or pay a deposit securely via our Verifone hosted
+          checkout. Enter the reference and amount provided by the clinic.
+        </p>
+        <form id="payment-form" class="payment-form" novalidate>
+          <label>
+            <span>Reference</span>
+            <input
+              type="text"
+              name="reference"
+              required
+              autocomplete="off"
+              placeholder="e.g. INV-1042"
+            />
+          </label>
+          <label>
+            <span>Amount (NZD)</span>
+            <input
+              type="number"
+              name="amount"
+              required
+              min="1"
+              step="0.01"
+              placeholder="0.00"
+            />
+          </label>
+          <button class="btn btn-primary" type="submit">
+            Continue to secure payment
+          </button>
+          <p id="payment-status" class="payment-status" role="status" aria-live="polite"></p>
+        </form>
+      </section> -->
+      
+      <a class="anchor" id="contact"></a>
+      <section class="section section-dark">
+        <h2>Get in touch</h2>
+        <div class="contact-grid">
+          <div>
+            <h3>Visit</h3>
+            <a href="https://maps.google.co.nz/?q=Queens Beauty Clinic, 119 Karangahape Road, Auckland, New Zealand" target="_blank" rel="noopener">
+              Queens Beauty Clinic
+              <br />
+              119 Karangahape Road
+              <br />
+              Auckland, New Zealand
+            </a>
+          </div>
+          <div>
+            <h3>Hours</h3>
+            <p>Mon - Sun<br />10 AM - 6 PM</p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p>
+              <a href="mailto:hello@queensbeautyclinic.co.nz"
+                >hello@queensbeautyclinic.co.nz</a
+              >
+            </p>
+          </div>
+        </div>
+        <div class="contact-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.360835027477!2d174.758659975841!3d-36.85778097223076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d4741b3001e65%3A0x45cd87edab5a0de7!2sQueens%20Beauty%20Clinic!5e0!3m2!1sen!2snz!4v1778825281305!5m2!1sen!2snz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <svg
+        data-src="/assets/images/QBC-Sign.svg"
+        data-cache="disabled"
+        alt="Queens Beauty Clinic"
+        class="footer-mark"
+      ></svg>
+      <p>&copy; <span id="year"></span> Queens Beauty Clinic. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
