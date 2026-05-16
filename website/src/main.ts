@@ -84,12 +84,22 @@ function wirePaymentForm(): void {
 
 function wirePostLoadStyles(): void {
   window.addEventListener('load', () => {
-    document.documentElement.style.scrollBehavior = 'smooth';
     document.documentElement.style.visibility = 'visible';
+  });
+}
+
+function wireScrollLinks(): void {
+  document.querySelectorAll<HTMLAnchorElement>("[data-scroll-to]").forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const id = link.getAttribute("data-scroll-to");
+      if (id) document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    });
   });
 }
 
 wireFooterYear();
 wireBookingsLink();
 wirePaymentForm();
+wireScrollLinks();
 wirePostLoadStyles();
