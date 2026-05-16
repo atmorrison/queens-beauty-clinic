@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="visibility: hidden;">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/assets/images/QBC-Head-Small.svg" />
@@ -18,7 +18,7 @@
     <script type="module" src="/src/main.ts"></script>  
     <script type="module" src="/lib/svg-loader.min.js" async></script>
   </head>
-  <body>
+  <body id="top">
     <div class="backdrop">
         <svg
           data-src="/assets/images/QBC-Head-Large.svg"
@@ -44,7 +44,6 @@
       </nav>
     </header>
 
-    <a class="anchor" id="top"></a>
     <main>
       <section class="section">
         <div class="hero">
@@ -65,8 +64,7 @@
         </div>
       </section>
 
-      <a class="anchor" id="services"></a>
-      <section class="section">
+      <section class="section" id="services">
         <h2>Services</h2>
         <p class="section-intro">
           Each treatment is tailored to you. Get in touch if you'd like advice
@@ -104,8 +102,7 @@
         </ul>
       </section>
 
-      <a class="anchor" id="book"></a>
-      <section class="section section-dark">
+      <section class="section section-dark" id="book">
         <h2>Book online</h2>
         <p class="section-intro">
           View live availability and book in seconds through our secure
@@ -118,8 +115,7 @@
         </div>
       </section>
 
-      <a class="anchor" id="about"></a>
-      <section class="section section-light">
+      <section class="section section-light" id="about">
         <h2>About</h2>
         <p class="section-intro">
           A calm, professional space where every treatment is built around
@@ -142,8 +138,7 @@
         </div>
       </section>
 
-      <!-- <a class="anchor" id="pay"></a>
-      <section class="section">
+      <!-- <section class="section" id="pay">
         <h2>Pay for an appointment</h2>
         <p class="section-intro">
           Settle an invoice or pay a deposit securely via our Verifone hosted
@@ -178,8 +173,7 @@
         </form>
       </section> -->
       
-      <a class="anchor" id="contact"></a>
-      <section class="section section-dark">
+      <section class="section section-dark" id="contact">
         <h2>Get in touch</h2>
         <div class="contact-grid">
           <div>

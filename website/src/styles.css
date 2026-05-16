@@ -50,15 +50,8 @@ h3 { font-size: 1.25rem; }
 p { margin: 0 0 1em; }
 
 /* --------- Utilities -------- */
-a.anchor {
-    display: block;
-    position: relative;
-    top: calc(-1 * var(--header-height));
-    visibility: hidden;
-}
-
-html {
-  scroll-behavior: smooth
+section[id] {
+  scroll-margin-top: var(--header-height);
 }
 
 /* --------- Backdrop --------- */

@@ -82,6 +82,14 @@ function wirePaymentForm(): void {
   });
 }
 
+function wirePostLoadStyles(): void {
+  window.addEventListener('load', () => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+    document.documentElement.style.visibility = 'visible';
+  });
+}
+
 wireFooterYear();
 wireBookingsLink();
 wirePaymentForm();
+wirePostLoadStyles();
